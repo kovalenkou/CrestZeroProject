@@ -1,0 +1,22 @@
+﻿<Window x:Name="mWindow" x:Class="CrestZeroProjectWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Игра Крестики-Нолики" Height="340" Width="325" Loaded="Window_Loaded_1" ResizeMode="NoResize">
+    <Grid x:Name="mainWinGrid" Margin="0,0,-8,0">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="bt1" Content="" HorizontalAlignment="Left" Margin="35,50,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="Button_Click_1" Foreground="{x:Null}" Focusable="False">
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="115,50,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="Button_Click_1" Foreground="{x:Null}" Focusable="False"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="195,50,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="Button_Click_1" Foreground="{x:Null}" Focusable="False"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="35,131,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="Button_Click_1" Foreground="{x:Null}" Focusable="False"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="115,131,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="Button_Click_1" Foreground="{x:Null}" Focusable="False"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="195,131,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="Button_Click_1" Foreground="{x:Null}" Focusable="False"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="35,210,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="Button_Click_1" Foreground="{x:Null}" Focusable="False"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="115,210,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="Button_Click_1" Foreground="{x:Null}" Focusable="False"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="195,210,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="Button_Click_1" Foreground="{x:Null}" Focusable="False"/>
+        <Label x:Name="lbGameWin" Content="" HorizontalAlignment="Left" Margin="35,13,0,0" VerticalAlignment="Top" Width="182" Height="26" FontFamily="SketchFlow Print" FontSize="14" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
