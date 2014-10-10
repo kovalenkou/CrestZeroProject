@@ -21,7 +21,6 @@ namespace CrestZeroProjectWpf
     {
         int chooseGame;
         int chooseXO;
-        //public string Symbol { get; set; }
         public int ChooseGame { get { return this.chooseGame;} }
         public int ChooseXO { get { return this.chooseXO; } }
 
@@ -37,12 +36,10 @@ namespace CrestZeroProjectWpf
         {
             if ((sender as RadioButton).Content.ToString().Contains("Х"))
             {
-                //this.Symbol = "X";
                 this.chooseXO = 1;
             }
             else
             {
-                //this.Symbol = "O";
                 this.chooseXO = 2;
             }
         }
