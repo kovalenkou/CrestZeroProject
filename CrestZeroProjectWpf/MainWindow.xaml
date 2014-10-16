@@ -8,7 +8,7 @@
         </Grid.RowDefinitions>
         <Button x:Name="bt1" Content="" HorizontalAlignment="Left" Margin="35,50,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="Button_Click_1" Foreground="{x:Null}" Focusable="False">
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="115,50,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="Button_Click_1" Foreground="{x:Null}" Focusable="False"/>
+        <Button x:Name="bt2" Content="" HorizontalAlignment="Left" Margin="115,50,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="Button_Click_1" Foreground="{x:Null}" Focusable="False"/>
         <Button Content="" HorizontalAlignment="Left" Margin="195,50,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="Button_Click_1" Foreground="{x:Null}" Focusable="False"/>
         <Button Content="" HorizontalAlignment="Left" Margin="35,131,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="Button_Click_1" Foreground="{x:Null}" Focusable="False"/>
         <Button Content="" HorizontalAlignment="Left" Margin="115,131,0,0" VerticalAlignment="Top" Width="75" Height="75" Click="Button_Click_1" Foreground="{x:Null}" Focusable="False"/>

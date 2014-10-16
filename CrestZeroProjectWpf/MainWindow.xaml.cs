@@ -69,6 +69,7 @@ namespace CrestZeroProjectWpf
             }
             InitializeComponent();
             this.Next();
+            
 
 
         }
@@ -112,27 +113,61 @@ namespace CrestZeroProjectWpf
                 this.Next();
             }
             
-            //bool flag = false;
-            //for (int i = 0; i < this.arrWin.GetLength(0); i++)
-            //{
-            //    for(int j = 0; j < this.arrWin.GetLength(1); j++)
-            //    {
-                        
-            //    }
+            //cpu.Move(this.buttons);
+            //this.bt2.BeginInit();
 
-            //}
-
-            
-
-            //(sender as Button).IsEnabled = false;
-
-            //if (flag == true)
-            //this.buttons[0].Content == this.buttons[1].Content && this.buttons[1].Content == this.buttons[2].Content
-            //    || this.buttons[3].Content == this.buttons[4].Content && this.buttons[4].Content == this.buttons[5].Content 
-            //    )
-            //{
-            //    MessageBox.Show("You win!!!");
-            //}
+            if (this.buttons[0].Content.ToString() != "" && this.buttons[0].Content == this.buttons[1].Content && this.buttons[1].Content == this.buttons[2].Content)
+            {
+                MessageBox.Show("You win!!!");
+                return;
+            }
+            else if (this.buttons[3].Content.ToString() != "" && this.buttons[3].Content == this.buttons[4].Content && this.buttons[4].Content == this.buttons[5].Content)
+            {
+                MessageBox.Show("You win!!!");
+                return;
+            }
+            else if (this.buttons[6].Content.ToString() != "" && this.buttons[6].Content == this.buttons[7].Content && this.buttons[7].Content == this.buttons[8].Content)
+            {
+                MessageBox.Show("You win!!!");
+                return;
+            }
+            else if (this.buttons[0].Content.ToString() != "" && this.buttons[0].Content == this.buttons[3].Content && this.buttons[3].Content == this.buttons[6].Content)
+            {
+                MessageBox.Show("You win!!!");
+                return;
+            }
+            else if (this.buttons[1].Content.ToString() != "" && this.buttons[1].Content == this.buttons[4].Content && this.buttons[4].Content == this.buttons[7].Content)
+            {
+                MessageBox.Show("You win!!!");
+                return;
+            }
+            else if (this.buttons[2].Content.ToString() != "" && this.buttons[2].Content == this.buttons[5].Content && this.buttons[5].Content == this.buttons[8].Content)
+            {
+                MessageBox.Show("You win!!!");
+                return;
+            }
+            else if (this.buttons[0].Content.ToString() != "" && this.buttons[0].Content == this.buttons[4].Content && this.buttons[4].Content == this.buttons[8].Content)
+            {
+                MessageBox.Show("You win!!!");
+                return;
+            }
+            else if (this.buttons[2].Content.ToString() != "" && this.buttons[2].Content == this.buttons[4].Content && this.buttons[4].Content == this.buttons[6].Content)
+            {
+                MessageBox.Show("You win!!!");
+                return;
+            }
+            else
+            {
+                if (this.buttons[0].Content.ToString() != "" && this.buttons[1].Content.ToString() != "" && this.buttons[2].Content.ToString() != ""
+                    && this.buttons[3].Content.ToString() != "" && this.buttons[4].Content.ToString() != "" && this.buttons[5].Content.ToString() != ""
+                    && this.buttons[6].Content.ToString() != "" && this.buttons[7].Content.ToString() != "" && this.buttons[8].Content.ToString() != ""
+                    )
+                {
+                    MessageBox.Show("Ничья!!!");
+                    this.lbGameWin.Content = "Ничья!!!";
+                    return;
+                }
+            }
         }
 
         private void Next()

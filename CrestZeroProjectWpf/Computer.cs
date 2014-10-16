@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace CrestZeroProjectWpf
 {
@@ -24,9 +25,11 @@ namespace CrestZeroProjectWpf
         public string ChooseXO { get { return this.chooseXO; } }
 
 
-        public void Move()
+        public void Move(List<Button> buttons)
         {
-            ;
+            //if (buttons[0].Content.ToString() != "")
+                //buttons[1].Content = this.chooseXO;
+                //bt2.PerformClick();
         }
     }
 }
